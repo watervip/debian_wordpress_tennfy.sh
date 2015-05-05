@@ -14,8 +14,8 @@ read -p "please MySql root password:" dbrootpass
 read -p "please input database name:" dbname
 read -p "please input database password:" dbpass
 cd /var/www
-wget http://cn.wordpress.org/wordpress-4.2-zh_CN.zip
-unzip wordpress-3.9-zh_CN.zip
+wget https://cn.wordpress.org/latest-zh_CN.zip
+unzip latest-zh_CN.zip
 cp -r ./wordpress/* /var/www/$hostname
 cd /var/www/$hostname
 cp wp-config-sample.php wp-config.php
