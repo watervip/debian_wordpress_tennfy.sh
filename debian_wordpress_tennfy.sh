@@ -8,6 +8,7 @@ fi
 echo "=========================================================================\n"
 printf "Auto install wordpress with lnmp install on your vps,written by tennfy \n"
 printf "Version 0.1 \n"
+echo "=========================================================================\n"
  
 read -p "Please input your hostname ,For example tennfy.com :" hostname
 read -p "please MySql root password:" dbrootpass
@@ -32,3 +33,4 @@ EOT
 chown -R www-data /var/www/$hostname
 echo "=========================================================================\n"
 echo "Auto install WordPress Complete!Good Bye!"
+echo "=========================================================================\n"
