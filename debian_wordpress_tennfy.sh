@@ -23,7 +23,7 @@ cp wp-config-sample.php wp-config.php
 sed -i 's/database_name_here/'$dbname'/g' /var/www/$hostname/wp-config.php
 sed -i 's/username_here/'$dbname'/g' /var/www/$hostname/wp-config.php
 sed -i 's/password_here/'$dbpass'/g' /var/www/$hostname/wp-config.php
- mysql -u root -p$dbrootpass -s <<EOT
+ mysql -uroot -p$dbrootpass -s <<EOT
  create database if not exists $dbname default charset utf8 collate utf8_general_ci;
 create user '$dbname'@'localhost' identified by '$dbpass';
 grant all on $dbname.* to $dbname@localhost;
