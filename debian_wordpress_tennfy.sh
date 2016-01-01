@@ -1,15 +1,15 @@
 #!/bin/bash
+clear
+echo "==================================================================="
+echo "install wordpress with lnmp install on your vps,written by tennfy  "
+echo "                           Version 0.1                             "
+echo "==================================================================="
 # Check if user is root
 if [ $(id -u) != "0" ]; then
     printf "Error: You must be root to run this script!\n"
     exit 1
 fi
-
-echo "==================================================================="
-echo "install wordpress with lnmp install on your vps,written by tennfy  "
-echo "                           Version 0.1                             "
-echo "==================================================================="
- 
+echo
 read -p "Please input your hostname ,For example tennfy.com :" hostname
 read -p "please MySql root password:" dbrootpass
 read -p "please input database name:" dbname
