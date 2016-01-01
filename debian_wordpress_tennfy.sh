@@ -5,10 +5,10 @@ if [ $(id -u) != "0" ]; then
     exit 1
 fi
 
-echo "=========================================================================\n"
-printf "Auto install wordpress with lnmp install on your vps,written by tennfy \n"
-printf "Version 0.1 \n"
-echo "=========================================================================\n"
+echo "==================================================================="
+echo "install wordpress with lnmp install on your vps,written by tennfy  "
+echo "                           Version 0.1                             "
+echo "==================================================================="
  
 read -p "Please input your hostname ,For example tennfy.com :" hostname
 read -p "please MySql root password:" dbrootpass
@@ -31,6 +31,8 @@ flush privileges;
 QUIT
 EOT
 chown -R www-data /var/www/$hostname
-echo "=========================================================================\n"
-echo "Auto install WordPress Complete!Good Bye!"
-echo "=========================================================================\n"
+rm -f /var/www/latest-zh_CN.zip
+rm -rf /var/www/wordpress
+echo "========================================================================"
+echo "             wordpress install finished, please enjoy it!               "
+echo "========================================================================"
