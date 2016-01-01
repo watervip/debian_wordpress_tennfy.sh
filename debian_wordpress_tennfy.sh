@@ -2,7 +2,7 @@
 clear
 echo "==================================================================="
 echo "install wordpress with lnmp install on your vps,written by tennfy  "
-echo "                           Version 0.1                             "
+echo "                           Version 1.1                             "
 echo "==================================================================="
 # Check if user is root
 if [ $(id -u) != "0" ]; then
